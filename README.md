@@ -1,6 +1,4 @@
-# Advent-of-Code-2019
-
-Python
+# Advent of Code 2019 - Python
 
 
 # Requirements
@@ -18,4 +16,4 @@ So make sure those are usable
 
 # License
 
-MIT bois
+**MIT**
