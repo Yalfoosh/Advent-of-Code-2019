@@ -70,7 +70,7 @@ def execute(memory, position: int, program_input, **kwargs):
     else:
         return len(memory)
 
-    return i + len(parameters) + 1
+    return position + len(parameters) + 1
 
 
 # Prep
