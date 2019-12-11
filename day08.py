@@ -3,7 +3,7 @@ import numpy as np
 image_dimensions = (25, 6)
 
 
-def load(image_dims, path: str = "input/8.txt"):
+def load(image_dims, path: str = "input/08.txt"):
     with open(path) as file:
         return np.array([c for c in file.read()]).reshape((-1, image_dims[0] * image_dims[1]))
 
@@ -53,6 +53,6 @@ for row in stacked_layer:
 
     final_image.append(r)
 
-print(f"[2]:")
+print(f"[2]")
 for r in final_image:
     print(r)

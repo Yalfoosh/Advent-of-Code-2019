@@ -19,7 +19,7 @@ second_range = (5, 10)
 
 
 # region Mostly same as Day 5
-def load(path: str = "input/7.txt"):
+def load(path: str = "input/07.txt"):
     with open(path) as file:
         return [int(x) for x in input_splitter.split(file.read().strip())]
 

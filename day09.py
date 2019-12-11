@@ -18,7 +18,7 @@ default_memory_value = 0
 
 
 # region Mostly same as Day 7
-def load(path: str = "input/9.txt"):
+def load(path: str = "input/09.txt"):
     with open(path) as file:
         instruction_list = [int(x) for x in input_splitter.split(file.read().strip())]
         return defaultdict(lambda: default_memory_value, {index: x for index, x in enumerate(instruction_list)})
@@ -37,6 +37,7 @@ def int_to_flag_vector(value, max_size=3):
 # Slightly modified IO
 def execute(memory, position: int, program_input, **kwargs):
     relative_base = kwargs.get("relative_base", [0])
+
     command_code = memory[position]
     flags = [0, 0, 0]
 

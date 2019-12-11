@@ -4,7 +4,7 @@ import re
 input_splitter = re.compile(r"\s*-\s*")
 
 
-def load(path: str = "input/4.txt"):
+def load(path: str = "input/04.txt"):
     with open(path) as file:
         return input_splitter.split(file.read().strip())
 

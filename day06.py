@@ -4,7 +4,7 @@ import re
 input_splitter = re.compile(r"\)")
 
 
-def load(path: str = "input/6.txt"):
+def load(path: str = "input/06.txt"):
     with open(path) as file:
         lines = filter(lambda x: len(x) != 0, [input_splitter.split(z.strip()) for z in file.readlines()])
         return set((x, y) for x, y in lines)

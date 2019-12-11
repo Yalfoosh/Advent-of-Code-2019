@@ -11,7 +11,7 @@ noun_range = (0, 100)
 verb_range = (0, 100)
 
 
-def load(path: str = "input/2.txt"):
+def load(path: str = "input/02.txt"):
     with open(path) as file:
         return list(map(int, input_splitter.split(file.read().strip())))
 

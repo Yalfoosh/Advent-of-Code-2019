@@ -3,7 +3,7 @@ import re
 input_splitter = re.compile(r",\s*")
 
 
-def load(path: str = "input/3.txt"):
+def load(path: str = "input/03.txt"):
     to_return = list()
 
     with open(path) as file:

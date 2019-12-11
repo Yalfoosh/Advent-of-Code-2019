@@ -1,4 +1,4 @@
-def load(path: str = "input/1.txt"):
+def load(path: str = "input/01.txt"):
     to_return = list()
 
     with open(path) as file:

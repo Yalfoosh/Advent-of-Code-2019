@@ -14,7 +14,7 @@ parameter_count_dict =\
     }
 
 
-def load(path: str = "input/5.txt"):
+def load(path: str = "input/05.txt"):
     with open(path) as file:
         return [int(x) for x in input_splitter.split(file.read().strip())]
 
